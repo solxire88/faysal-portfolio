@@ -45,7 +45,7 @@ export default function Commercials() {
                                 viewport={{ once: true, amount: 0.5 }}
                                 transition={{ duration: 1, ease: 'easeOut' }}
                             >
-                                <div className="sticky top-30 justify-center flex flex-col gap-4 md:pr-40 ">
+                                <div className="sticky top-30 justify-center align-center flex flex-col gap-4 md:pr-40 ">
                                     <em className='text-primary/50 font-bold'>
                                         {video.title}
                                     </em>
