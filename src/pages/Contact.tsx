@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { useState } from 'react'
+import { useState, ChangeEvent, FormEvent } from 'react'
 
 
 export default function Contact() {
@@ -13,11 +13,11 @@ export default function Contact() {
         message: '',
     })
 
-    const handleChange = (e: any) => {
+    const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setFormData({ ...formData, [e.target.name]: e.target.value })
     }
 
-    const handleSubmit = async (e: any) => {
+    const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         console.log(formData);
         const res = fetch('/api/contact', {
@@ -27,8 +27,7 @@ export default function Contact() {
             },
             body: JSON.stringify(formData),
         })
-        if (res.ok) console.log('Message sent');
-        else console.log('erroooour')
+        console.log(res)
     }
 
     return (
