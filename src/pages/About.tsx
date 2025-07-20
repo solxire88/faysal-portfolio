@@ -24,7 +24,7 @@ export default function About() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm tracking-tight leading-tight">
                 <div className="text-justify text-lg leading-tight tracking-tight flex flex-col justify-center md:pr-40">
-                    This is me I do stuff this is my story and what i want to do in my life i do these videos and i goon 24/7 nonstop
+                    A visionary mind, constantly working on bringing ideas into reality and striving to leave a lasting impact
                 </div>
                 <div>
 

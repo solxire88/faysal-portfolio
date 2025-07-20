@@ -32,8 +32,9 @@ export default function Contact() {
 
     return (
         <div id="contact" className="min-h-screen flex flex-col gap-20 md:px-20 py-20">
+
             <h1 className="text-lg text-primary/50">
-                Wanna tell me smtn ?
+                Available for any discussion.
             </h1>
 
             <form
